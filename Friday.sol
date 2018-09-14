@@ -8,9 +8,10 @@ contract Friday {
     string lastGuess;
     
 
-   constructor(bytes32 _setTarget) public {
-       targetHash = _setTarget;
-       owner = msg.sender;
+// Don't do this in a real contract; taking a string here is for convenience.
+   constructor(string _setTarget) public {
+      targetHash = keccak256(abi.encodePacked(_setTarget));
+      owner = msg.sender;
    }
     
     function depositMoney() public payable returns (bool success) {
