@@ -10,7 +10,7 @@
 pragma solidity ^0.4.23;
 
 // the `contract` keyword marks a code block which is analogous to a module in other languages.
-contract FridayContract {
+contract Friday {
         
 // global variables. the 'public' modidifier automatically creates a getter function for you when compiled.
 // (lastGuess) is purposely left private for demonstration. Keep in mind there is NO SECRET DATA 
